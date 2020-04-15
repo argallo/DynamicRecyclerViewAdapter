@@ -8,6 +8,16 @@ The main goal for DynamicRecyclerViewAdapter is to allow a developer to register
 First add the library to your gradle.build file using the following line
 
 ```
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+ 
+dependencies {
+    implementation 'com.github.argallo:DynamicRecyclerViewAdapter:0.0.1'
+}
 ```
 
 Next let's create a ViewModel, DelegateCallback, and a ViewHolder:
